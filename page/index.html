@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新闻客户端</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="scroll">
+            <!-- 顶部 -->
+            <div class="head_wrap">
+                <header class="head">
+                    <span></span>
+                    <input type="text" placeholder="大家都在搜索5G">
+                </header>
+                <div class="nav_wrap">
+                    <div class="scroll_nav">
+                        <a href="#" class="active" data-type="guonei">推荐</a>
+                        <a href="#" data-type="top">热门</a>
+                        <a href="#" data-type="guoji">国际</a>
+                        <a href="#" data-type="keji">科技</a>
+                        <a href="#" data-type="caijing">财经</a>
+                        <a href="#" data-type="junshi">军事</a>
+                        <a href="#" data-type="shehui">生活</a>
+                        <a href="#" data-type="yule">娱乐</a>
+                        <a href="#" data-type="shishang">时尚</a>
+                        <a href="#" data-type="renwu">人物</a>
+                        <a href="#" data-type="city">城市</a>
+                        <a href="#" data-type="zhichang">职场</a>
+                        <a href="#" data-type="shendu">深度</a>
+                        <a href="#" data-type="shipin">视频</a>
+                        <a href="#" data-type="yinpin">音频</a>
+                        <a href="#" data-type="fuwu">服务</a>
+                    </div>
+                    <span class="icon"></span>
+                    <div class="nav">
+                        <ul class="list">
+                            <li><a href="#" class="active">推荐</a></li>
+                            <li><a href="#">热门</a></li>
+                            <li><a href="#">快讯</a></li>
+                            <li><a href="#">科技</a></li>
+                            <li><a href="#">财经</a></li>
+                            <li><a href="#">军事</a></li>
+                            <li><a href="#">生活</a></li>
+                            <li><a href="#">娱乐</a></li>
+                            <li><a href="#">时尚</a></li>
+                            <li><a href="#">人物</a></li>
+                            <li><a href="#">城市</a></li>
+                            <li><a href="#">职场</a></li>
+                            <li><a href="#">深度</a></li>
+                            <li><a href="#">视频</a></li>
+                            <li><a href="#">音频</a></li>
+                            <li><a href="#">服务</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 内容区 -->
+            <div class="content_wrap clearfix">
+                <div class="content_scroll">
+                    <section>
+                        <div class="banner">
+                            <div class="img_wrap">
+                                <a href="#"><img src="./images/banner1.png" alt="">
+                                    <p class="img_title">《庆余年》重复收费余波未了，腾讯视频、爱奇艺都道歉了</p>
+                                </a>
+                                <a href="#"><img src="./images/banner2.png" alt="">
+                                    <p class="img_title">
+                                        垃圾分类、乐队夏天、996，关于2019年你还记住了什么？
+                                    </p>
+                                </a>
+                                <a href="#"><img src="./images/banner3.png" alt="">
+                                    <p class="img_title">
+                                        App Annie年度报告出炉：TikTok下载量超Instagram，腾讯吃鸡氪金力惊人
+                                    </p>
+                                </a>
+                                <a href="#"><img src="./images/banner4.png" alt="">
+                                    <p class="img_title">
+                                        携手展望、青山周平、张亚东 Jya与UCCA Lab联袂演绎科技与艺术的碰撞
+                                    </p>
+                                </a>
+                            </div>
+
+                            <div class="circle_wrap">
+                                <span class="circle_active"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <article class="content_list">
+                            <!-- <a class="content_item">
+                                <div class="item_word">
+                                    <h4>年关将至，湖北阳新白沙镇一手机店一夜之间被洗劫一空</h4>
+                                    <p>阳新风情 · 2019-12-19 11:26</p>
+                                </div>
+                                <div class="item_img">
+                                    <img src="http:\/\/00imgmini.eastday.com\/mobile\/20191219\/2019121911_c15070e5cbbf4d0e95e53bebc9bd8384_7859_cover_mwpm_03200403.jpg" alt="">
+                                </div>
+                            </a>
+                            <a class="content_item">
+                                <div class="item_word">
+                                    <h4>青岛警方斩断跨省贩毒通道 抓获12名涉毒嫌疑人</h4>
+                                    <p>青岛新闻网 · 2019-12-19 11:25</p>
+                                </div>
+                                <div class="item_img">
+                                    <img src="http:\/\/02imgmini.eastday.com\/mobile\/20191219\/20191219112553_ab2a455e57613a2bef8429bf85254cdb_4_mwpm_03200403.jpg" alt="">
+                                </div>
+                            </a> -->
+                        </article>
+                        <div class="load">
+                            <span class="loading"></span>
+                        </div>
+                    </section>
+                    <section class="top">
+                        <article class="content_list">
+                            <!-- <a class="content_item">
+                                <div class="item_word">
+                                    <h4>土耳其军队又一丑事遭揭穿，性质恶劣！美国：犯下战争罪</h4>
+                                    <p>东方头条 大国军情</p>
+                                </div>
+                                <div class="item_img">
+                                    <img src="http:\/\/08imgmini.eastday.com\/mobile\/20191220\/2019122008_9c759b8661cb49a6a2afb8c73d731200_7014_cover_mwpm_03200403.jpg"
+                                        alt="">
+                                </div>
+                            </a><a class="content_item">
+                                <div class="item_word">
+                                    <h4>青岛警方斩断跨省贩毒通道 抓获12名涉毒嫌疑人</h4>
+                                    <p>青岛新闻网</p>
+                                </div>
+                                <div class="item_img">
+                                    <img src="http:\/\/02imgmini.eastday.com\/mobile\/20191219\/20191219112553_ab2a455e57613a2bef8429bf85254cdb_4_mwpm_03200403.jpg"
+                                        alt="">
+                                </div>
+                            </a>
+                            <a class="content_item">
+                                <div class="item_word">
+                                    <h4>青岛警方斩断跨省贩毒通道 抓获12名涉毒嫌疑人</h4>
+                                    <p>青岛新闻网</p>
+                                </div>
+                                <div class="item_img">
+                                    <img src="http:\/\/02imgmini.eastday.com\/mobile\/20191219\/20191219112553_ab2a455e57613a2bef8429bf85254cdb_4_mwpm_03200403.jpg"
+                                        alt="">
+                                </div>
+                            </a>
+                            <a class="content_item">
+                                <div class="item_word">
+                                    <h4>青岛警方斩断跨省贩毒通道 抓获12名涉毒嫌疑人</h4>
+                                    <p>青岛新闻网</p>
+                                </div>
+                                <div class="item_img">
+                                    <img src="http:\/\/02imgmini.eastday.com\/mobile\/20191219\/20191219112553_ab2a455e57613a2bef8429bf85254cdb_4_mwpm_03200403.jpg"
+                                        alt="">
+                                </div>
+                            </a>
+                            <a class="content_item">
+                                <div class="item_word">
+                                    <h4>青岛警方斩断跨省贩毒通道 抓获12名涉毒嫌疑人</h4>
+                                    <p>青岛新闻网</p>
+                                </div>
+                                <div class="item_img">
+                                    <img src="http:\/\/02imgmini.eastday.com\/mobile\/20191219\/20191219112553_ab2a455e57613a2bef8429bf85254cdb_4_mwpm_03200403.jpg"
+                                        alt="">
+                                </div>
+                            </a> -->
+                        </article>
+                    </section>
+                    <section>
+                        <article class="content_list"></article>
+                    </section>
+                    <section>
+                        <article class="content_list"></article>
+                    </section>
+                    <section>
+                        <article class="content_list"></article>
+                    </section>
+                    <section>
+                        <article class="content_list"></article>
+                    </section>
+                    <section>
+                        <article class="content_list"></article>
+                    </section>
+                    <section>
+                        <article class="content_list"></article>
+                    </section>
+                    <section>
+                        <article class="content_list"></article>
+                    </section>
+                    <section>
+                        <article class="content_list"></article>
+                    </section>
+                    <section>
+                        <article class="content_list"></article>
+                    </section>
+                    <section>
+                        <article class="content_list"></article>
+                    </section>
+                    <section>
+                        <article class="content_list"></article>
+                    </section>
+                    <section>
+                        <article class="content_list"></article>
+                    </section>
+                    <section>
+                        <article class="content_list"></article>
+                    </section>
+                    <section>
+                        <article class="content_list"></article>
+                    </section>
+                </div>
+            </div>
+            <!-- 更新 -->
+            <div class="update">
+                <span class="updating"></span>
+            </div>
+        </div>
+        <!-- 弹出层 -->
+        <div class="dialog">
+            <p>暂无数据更新，请稍后刷新</p>
+        </div>
+    </div>
+
+    <script src="./js/swiper.js"></script>
+    <script src="./js/jsonp.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
